@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -O2 -ggdb3
-LDFLAGS = -lncurses -lmenu -L./
+LDFLAGS = -lncurses -lmenu -L./ -no-pie
 SRCS = labirintw.c game.c
 HDRS = game.h
 OBJS = $(SRCS:.c=.o)
