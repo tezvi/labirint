@@ -22,10 +22,15 @@
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof(a[0]))
 
 void init_game(int p_lines, int p_cols);
+
 void print_dialog(char *msg, chtype color, int width, int height);
+
 void clean_game();
+
 void free_ghosts();
+
 void free_labirint();
 
 extern void print_in_middle(WINDOW *win, int starty, int startx, int width, char *string, chtype color);
+
 extern void fatal_error(char *msg);
